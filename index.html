@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Футажи Меллстрой</title>
+<meta name="description" content="Каталог футажей с Меллстроем с поиском по описанию и тегам.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>Футажи <span>Меллстрой</span></h1>
+    <p class="sub">Подборка из <a href="https://www.tiktok.com/@footage_me1" target="_blank" rel="noopener">@footage_me1</a> · поиск по описанию, хештегам и тегам</p>
+    <div class="search">
+      <input id="q" type="search" placeholder="Поиск: например «машина», «стрим», «эмоции»…" autocomplete="off" autofocus>
+      <select id="sort" aria-label="Сортировка">
+        <option value="new">Сначала новые</option>
+        <option value="old">Сначала старые</option>
+        <option value="views">По просмотрам</option>
+        <option value="likes">По лайкам</option>
+      </select>
+    </div>
+    <div id="tags" class="tags"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="count" class="count"></div>
+  <div id="grid" class="grid"></div>
+  <div id="empty" class="empty" hidden></div>
+  <button id="more" class="more" hidden>Показать ещё</button>
+</main>
+
+<div id="modal" class="modal" hidden>
+  <div class="box">
+    <button id="close" class="close" aria-label="Закрыть">×</button>
+    <iframe id="player" allowfullscreen allow="autoplay; fullscreen; encrypted-media" title="TikTok"></iframe>
+    <div class="info">
+      <p id="mtext"></p>
+      <a id="mlink" target="_blank" rel="noopener">Открыть в TikTok ↗</a>
+    </div>
+  </div>
+</div>
+
+<footer class="wrap foot">Неофициальный фан-проект. Все видео принадлежат их авторам и воспроизводятся через официальный плеер TikTok.</footer>
+<script src="app.js"></script>
+</body>
+</html>
